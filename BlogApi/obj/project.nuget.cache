@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VxtdR00q5bI=",
+  "dgSpecHash": "VJyF7KEeG+s=",
   "success": true,
   "projectFilePath": "C:\\Users\\Zach\\projects\\portfolio-blog\\BlogApi\\BlogApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Zach\\.nuget\\packages\\efcore.namingconventions\\10.0.1\\efcore.namingconventions.10.0.1.nupkg.sha512",
     "C:\\Users\\Zach\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Zach\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
     "C:\\Users\\Zach\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
