@@ -1,14 +1,20 @@
+import type { Ref } from "react";
+import Link from "next/link";
+
 interface NavBtnProps {
     label: string;
-    onClick: () => void;
+    href: string;
     active: boolean;
+    ref?: Ref<HTMLAnchorElement>;
 }
 
 export default function NavBtn({
     label,
-    onClick,
+    href,
     active,
+    ref,
 }: NavBtnProps) {
-    const classes = active ? "text-xl mx-5 px-1 text-[#E89FB0] border-b-2 border-[E89FB0]" : "text-xl mx-5 mb-1 px-1 text-[#C5B4B7] hover:text-[#F5ECEE] transition duration-350 ease-in-out active:text-[#E89FB0]";
-    return <button className={classes} onClick={onClick}>{label}</button>
+    const base = "text-xl mx-5 px-1 transition-colors duration-300 ease-in-out";
+    const classes = active ? `${base} text-[#E89FB0]` : `${base} text-[#C5B4B7] hover:text-[#F5ECEE] active:text-[#E89FB0]`;
+    return <Link ref={ref} href={href} className={classes} aria-current={active ? "page" : undefined}>{label}</Link>
 }
